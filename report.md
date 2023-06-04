@@ -31,13 +31,14 @@ Given more time with the datasets, I would spend more time tuning hyperparameter
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
+![model_train_score](https://github.com/blitz234/intro-to-ml-udacityProject/assets/92010969/0c8eb9f1-b11a-438e-8f99-a1b445c4b049)
 
-![model_train_score.png](model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
+![model_test_score](https://github.com/blitz234/intro-to-ml-udacityProject/assets/92010969/bbe68f51-d82c-405f-aa27-98e623f6e62c)
 
-![model_test_score.png](model_test_score.png)
+
 
 ## Summary
 During this project we used AutoGluon's Tabular Predictor to make predictions on Kaggle's dataset provided in bike-sharing-demand competition. In this, we first made a raw submission, based on using raw data provided in train.csv file provided from kaggle, without creating any additional features, and relying on default hyperparameters. This resulted in a score of 1.81148 on kaggle. In the next step we had to do exploratory analysis, to add additonal features to the dataset. For this I parsed the datetime data provided in dataset to extract hour and month data, which had some relationship with the count of people which we were trying to predict. I also tried some other features but they didn't provide the expected outcome. Using month and hour as additional features, resulted in a score of 0.51720 on kaggle. I noticed the top performing models in this run was WeightedEnsemble models, followed by CatBoost and LightGBM. During hyperparameter optimization, I increased the time_limit to increase the training time for the model. I tried different hyperparameters on CatBoost and LightGBM models which included learning_rate, num_iterations, max_depth or depth and num_leaves. For the most time, I got scores around the score I got when I added additional features. Eventually I settled on tuning learning_rate and num_iterations for LightGBM model. I also dropped month column, because I was getting really poor score_val for the model during training, and I also thought that month didn't impact the count much. Doing this, the best score that I was able to achieve on kaggle was 0.46936 by adjusting, time_limit to 900s from 600s, learning rate to 0.05 from 0.1 and num_iterations to 200 from 100. 

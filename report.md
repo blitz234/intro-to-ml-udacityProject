@@ -31,12 +31,14 @@ Given more time with the datasets, I would spend more time tuning hyperparameter
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
-![model_train_score](https://github.com/blitz234/intro-to-ml-udacityProject/assets/92010969/0c8eb9f1-b11a-438e-8f99-a1b445c4b049)
+![image](https://github.com/blitz234/intro-to-ml-udacityProject/assets/92010969/0124a95e-c2dc-4e10-843a-1c4595f9a9bb)
+
 
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-![model_test_score](https://github.com/blitz234/intro-to-ml-udacityProject/assets/92010969/bbe68f51-d82c-405f-aa27-98e623f6e62c)
+![image](https://github.com/blitz234/intro-to-ml-udacityProject/assets/92010969/9584098d-8635-4c97-bde2-952db964562b)
+
 
 
 
